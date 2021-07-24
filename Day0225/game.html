@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+    /* 누구를 (selector) 어떻게 {} */
+    /* html의 미적 기능의 한계응 보완하기 위해 개발된 기술이 css 즉 스타일 시트이다 */
+body{
+    background-image: url(../images/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+/* how to get url of something that you have saved: map the pathway from current workspace/html to the image.
+the ../ represents moving out of the current folder */
+}
+
+/* html문서내애 있는 모든 컨텐츠는 반드시 마크업해야
+원하는 곳에 두려면, html상 원래 물가능하다...
+but css 를 이용하여, 이 한계를 극복할 수 있다 
+이 예재에는 스타일 시트의 위치 지정 속성을 배워보자*/
+
+/* for a monitor, the most left top is 0,0 (orientation).
+as we move further right, x value increases positively. 
+as we move lower, y increases positively as well (unlike actual graphing)
+aka as you move from bottom top, y decreases*/
+.hero{
+    width:100px;
+    position: absolute;
+    left: 200px; 
+    /* x-axis to 200px */
+    top: 300px; 
+    /* y-axis to 300px */
+}
+
+</style>
+
+</head>
+<body>
+    <img src="../images/hero.jpg" class="hero">
+
+    
+</body>
+</html>
